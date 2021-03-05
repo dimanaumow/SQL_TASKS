@@ -1,6 +1,7 @@
 # SQL_TASK
 
-Решение задачек с сайта sql-ex
+Complete task from sql-ex
 
-Все файлы разбиты тематически по конструкциям запросов(WHERE, ORDER BY и прочее)
-
+Unfinished tasks: 
+WHERE: 97
+ORDER BY: 77(JOIN), 24(CTE, UNION)
