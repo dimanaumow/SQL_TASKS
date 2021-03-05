@@ -2,6 +2,13 @@ USE [sql-ex]
 GO 
 
 
+--Exercise: 10 (Serge I: 2002-09-23)
+--Find the printer models having the highest price. Result set: model, price.
+SELECT TOP(1) WITH TIES model, price
+FROM Printer
+ORDER BY price DESC
+
+
 --Exercise: 18 (Serge I: 2003-02-03)
 --Find the makers of the cheapest color printers. Result set: maker, price.
 SELECT maker, price
