@@ -8,8 +8,7 @@ GO
 SELECT maker, 
 	   speed
   FROM Product 
-  JOIN Laptop 
-    ON Product.model = Laptop.model
+  INNER JOIN Laptop ON Product.model = Laptop.model
  WHERE hd >= 10
 
 
@@ -17,8 +16,7 @@ SELECT maker,
 --Find the makers of PCs with a processor speed of 450 MHz or more. Result set: maker.
 SELECT DISTINCT maker
   FROM PC 
-  JOIN Product 
-    ON PC.model = Product.model
+  INNER JOIN Product ON PC.model = Product.model
  WHERE PC.speed >= 450
    AND type = 'pc'
 
