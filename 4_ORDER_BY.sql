@@ -15,7 +15,7 @@ SELECT TOP(1) WITH TIES model,
 SELECT maker, 
 	   price
   FROM Product 
-  INNER JOIN Printer ON Product.model = Printer.model
+ INNER JOIN Printer ON Product.model = Printer.model
  WHERE price =
 			(
 			SELECT MIN(price) 

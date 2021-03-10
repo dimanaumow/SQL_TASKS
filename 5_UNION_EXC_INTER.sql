@@ -6,19 +6,19 @@ GO
 SELECT PC.model,
 	   PC.price 
   FROM PC 
-  INNER JOIN PRODUCT ON PC.model = Product.model
+ INNER JOIN PRODUCT ON PC.model = Product.model
   WHERE product.maker = 'B'
 UNION 
 SELECT Laptop.model, 
 	   Laptop.price 
  FROM Laptop 
- INNER JOIN PRODUCT ON Laptop.model = Product.model
+INNER JOIN PRODUCT ON Laptop.model = Product.model
  WHERE product.maker = 'B'
 UNION 
 SELECT Printer.model, 
 	   Printer.price 
  FROM Printer 
- INNER JOIN PRODUCT ON Printer.model = Product.model
+INNER JOIN PRODUCT ON Printer.model = Product.model
  WHERE product.maker = 'B'
 
 
